@@ -1,0 +1,64 @@
+.main {
+    background: no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+
+    &.half {
+        height: 50vh;
+        
+        .main_inner {
+
+            h1 {
+                border: 2px solid #fff;
+                padding: 20px;
+            }
+
+            button {
+                display: none;
+            }
+
+            .main_phones {
+                display: none;
+            }
+        }
+    }
+
+    .main_inner {
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        row-gap: 40px;
+        
+
+        h1 {
+            color: white;
+            font-size: 46px;
+            font-weight: 700;
+
+            text-align: center;
+
+            width: 90%;
+        }
+
+        .main_phones {
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+
+            text-align: center;
+
+            .main_phone {
+                color: #fff;
+
+                &:hover {
+                    color: #F0B327;
+                }
+            }
+        }
+    }
+}
