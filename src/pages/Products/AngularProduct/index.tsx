@@ -1,14 +1,65 @@
 
+import { Helmet } from 'react-helmet';
+import { useFirestoreCollection } from '../../../App';
+import { List } from '../../../components/List';
+import { Main } from '../../../components/Main';
+import { IDocument, Table } from '../../../components/Table';
 import './index.scss';
 
 export const AngularProduct = () => {
-    return (
-        <section className="">
-            <div className="container">
-                <div className="_inner">
+    const angularCollection = useFirestoreCollection<IDocument>("angular");
 
-                </div>
-            </div>
-        </section>
+    return (
+        <main>
+            <Helmet>
+                <title>Металлический уголок: надежность и разнообразие в Складе металла в Молодечно.</title>
+                <meta name="description" content="Уголок 25х25, 40х40, 50х50 и больше. Широкий выбор металлических уголков различных размеров и качества в Складе металла в Молодечно. Удобство заказа и доставка по всей области." />
+            </Helmet>
+
+            <Main 
+                title='Металлический уголок: разновидности, применение и особенности' 
+                bg='zadnij-fon-sklad-metalla-hranilishche-metalloizdelij-i-v-chastnosti-ugolka.jpg' 
+                optionalClass="half" 
+            />
+
+            <Table 
+                title='Каталог уголка металлического: размеры и характеристики.'
+                collections={
+                    [
+                        {
+                            imgAlt: 'Фото на котором Уголок металлический',
+                            imgTitle: 'Уголок металлический',
+                            title: 'Уголок металлический',
+                            icon: 'ugolok-metallicheskij-v-sklade-metalla.jpg',
+                            documents: angularCollection.data,
+                        },
+                    ]
+                }
+            />
+
+            <List 
+                title="Подробнее о металлическом уголке:"
+                listItem={[
+                    {
+                        imgAlt: 'Изображение металлического уголка',
+                        imgTitle: 'Металлический уголок: свойства, применение и достоинства.',
+                        listImg: 'foto-metallicheskogo-ugolka.jpg',
+                        listText: 'Металлический уголок: свойства, применение и достоинства. Металлический уголок - это металлический профиль, который имеет форму буквы "L". Уголки изготавливаются из различных материалов, включая сталь, алюминий, нержавеющую сталь и другие сплавы.',
+                    },
+                    {
+                        imgAlt: 'Фото металлического уголка',
+                        imgTitle: 'Уголки широко используются в строительстве и промышленности',
+                        listImg: 'foto-metallicheskogo-ugolka-assortimenta.jpg',
+                        listText: 'Уголки широко используются в строительстве и промышленности благодаря своим механическим свойствам и прочности. Они часто применяются для создания конструкций, фиксации элементов, укрепления соединений и многого другого.',
+                    },
+                    {
+                        imgAlt: 'Картинка металлического уголка',
+                        imgTitle: 'Металлические уголки доступны в различных размерах',
+                        listImg: 'foto-metallicheskogo-ugolka-kataloga.jpg',
+                        listText: 'Металлические уголки доступны в различных размерах, толщинах и материалах. Они могут быть приобретены как в розницу, так и оптом, в зависимости от потребностей и требований проекта. Основные преимущества металлических уголков: Высокая прочность и жесткость; Хорошая коррозионная стойкость, особенно у уголков из нержавеющей стали; Широкий диапазон размеров и толщин; Легко поддаются обработке и установке; Могут использоваться в различных условиях эксплуатации.',
+                    },
+                ]}
+            />
+        </main>
     )
 }

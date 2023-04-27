@@ -1,6 +1,6 @@
 
 .navbar {
-    padding: 20px;
+    padding: 20px 0;
   
     &_links {
       display: flex;
@@ -8,7 +8,7 @@
       justify-content: center;
       align-items: center;
       row-gap: 20px;
-      padding: 20px;
+      padding: 20px 0;
 
       z-index: 2;
 
@@ -69,3 +69,13 @@
     }
   }
   
+
+@media(max-height: 640px) {
+  .navbar {
+    
+    &_links {
+      row-gap: 10px;
+      padding: 10px 0;
+    }
+  }
+}

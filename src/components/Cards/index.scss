@@ -44,3 +44,29 @@
         }
     }
 }
+
+@media(max-width: 768px) {
+    .cards {
+    
+        .card {
+    
+            .card_inner {
+        
+                .card_title {
+                }
+        
+                .card_text {
+                    width: 100%;
+                    font-size: 14px;
+                }
+        
+                .card_img {
+                    width: 100%;
+                }
+        
+                a {
+                }
+            }
+        }
+    }
+}
