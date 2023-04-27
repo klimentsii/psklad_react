@@ -50,3 +50,27 @@ footer {
       }
 }
   
+
+@media(max-width: 800px) {
+  footer {
+
+    .footer_inner {
+      flex-direction: column;
+      row-gap: 20px;
+
+        .footer_item {
+          width: 100%;
+          
+          .footer_title {
+            text-align: center;
+          }
+        
+          .footer_link {
+            width: 100%;
+            text-align: center;
+            justify-content: center;
+          }
+        }
+      }
+    }
+}

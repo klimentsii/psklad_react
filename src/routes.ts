@@ -1,5 +1,3 @@
-import { ReactNode } from "react";
-import { ProfileProduct } from "./pages/Products/ProfileProduct";
 
 export interface IRoute {
     name: string;
@@ -13,46 +11,54 @@ export const routes: IRoute[] = [
     },
     {
         name: 'Цены',
-        link: '/catalog',
+        link: '/ceny/',
     },
     {
         name: 'Услуги',
-        link: '/services',
+        link: '/uslugi/',
     },
     {
         name: 'Профильная труба',
-        link: '/profile',
+        link: "/profil'/",
+    },
+    {
+        name: 'Арматура',
+        link: '/armatura/',
+    },
+    {
+        name: 'Сетка кладочная',
+        link: '/setka/',
     },
     {
         name: 'Лист металлический',
-        link: '/sheet',
+        link: '/list/',
     },
     {
         name: 'Трубы водогазопроводная и электросварная',
-        link: '/pipe',
+        link: '/truby/',
     },
     {
         name: 'Металлический квадрат',
-        link: '/square',
+        link: '/kvadrat/',
     },
     {
         name: 'Металлический круг',
-        link: '/circle',
+        link: '/krug/',
     },
     {
         name: 'Металлический уголок',
-        link: '/angular',
+        link: '/ugolok/',
     },
     {
         name: 'Заглушки',
-        link: '/plug',
+        link: '/zaglushki/',
     },
     {
         name: 'Полоса металлическая',
-        link: '/strip',
+        link: '/polosa/',
     },
     {
         name: 'Контакты',
-        link: '/contacts',
+        link: '/contacty/',
     },
 ];

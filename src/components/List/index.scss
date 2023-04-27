@@ -50,3 +50,19 @@
         }
     }
 }
+
+@media(max-width: 768px) {
+    .list {
+
+        .list_inner {
+    
+            .list_item {
+    
+                .list_text {
+                    font-size: 14px;
+                    padding: 5px;
+                }
+            }
+        }
+    }
+}

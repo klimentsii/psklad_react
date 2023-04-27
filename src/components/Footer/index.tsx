@@ -4,6 +4,7 @@ import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import TelegramIcon from '@mui/icons-material/Telegram';
 import TtyIcon from '@mui/icons-material/Tty';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
+import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import './index.scss';
 
 import { routes } from '../../routes';
@@ -33,6 +34,7 @@ export const Footer = () => {
                             <Link className="footer_link hover_3" to="tel:+375176521472"><TtyIcon /><div>+375-17-652-14-72</div></Link>
                             <Link className="footer_link hover_3" to="https://t.me/joinchat/+375295561045"><TelegramIcon /><div>+375-29-656-10-46</div></Link>
                             <Link className="footer_link hover_3" to="https://www.google.fr/maps/place/54%C2%B017'59.7%22N+26%C2%B052'46.6%22E/@54.2999178,26.8788223,323m/data=!3m2!1e3!4b1!4m12!1m7!3m6!1s0x46eecfd717f35999:0x5cf8d54261869925!2sMuseum+of+the+barricades+of+1991!8m2!3d56.9486149!4d24.1059482!16s%2Fg%2F1tdb_b7x!3m3!8m2!3d54.2999167!4d26.8796111"><LocationOnIcon /><div>ул. Т.Дудко 4В, Молодечно</div></Link>
+                            <Link className="footer_link hover_3" to="https://www.google.fr/maps/place/54%C2%B017'59.7%22N+26%C2%B052'46.6%22E/@54.2999178,26.8788223,323m/data=!3m2!1e3!4b1!4m12!1m7!3m6!1s0x46eecfd717f35999:0x5cf8d54261869925!2sMuseum+of+the+barricades+of+1991!8m2!3d56.9486149!4d24.1059482!16s%2Fg%2F1tdb_b7x!3m3!8m2!3d54.2999167!4d26.8796111"><AccessTimeIcon /><div>пн-пт, 8:00-17:00</div></Link>
                         </div>
                     </div>
                 </div>

@@ -9,6 +9,7 @@ interface IGallery {
 interface IImg {
     imgSrc: string;
     imgAlt: string;
+    imgTitle: string;
 }
 
 export const Gallery = ({ images }: IGallery) => {
@@ -17,7 +18,7 @@ export const Gallery = ({ images }: IGallery) => {
 
     return(
         <section className="gallery">
-            {images.map((e, i) => <img src={'../../assets/images/sklad/' + e.imgSrc} key={i} alt={e.imgAlt}></img>)}
+            {images.map((e, i) => <img src={'../../assets/images/sklad/' + e.imgSrc} key={i} alt={e.imgAlt} title={e.imgTitle} ></img>)}
         </section>
     )
 }

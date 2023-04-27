@@ -35,12 +35,10 @@ const Grid: React.FC<IGrid> = ({title, secondClass, gridItems}: IGrid) => {
                                 {e.icon} 
                             
                                 <div className="grid_item_content">
-                                    <div className="grid_item_title">
+                                    <h3 className="grid_item_title">
                                         {e.title}
-                                    </div>
-                                    <p className="grid_item_text">
-                                        {e.text}
-                                    </p>
+                                    </h3>
+                                    <p className="grid_item_text" dangerouslySetInnerHTML={{__html: e.text}}></p>
                                 </div>
                             </Link>
                         )}

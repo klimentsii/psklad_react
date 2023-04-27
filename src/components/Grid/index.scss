@@ -79,3 +79,34 @@
         }
     }
 }
+
+
+@media(max-width: 768px) {
+    .grid {
+    
+        .grid_inner {
+    
+            .grid_content {
+                
+                .grid_item {
+                    width: 48%;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 600px) {
+    .grid {
+    
+        .grid_inner {
+    
+            .grid_content {
+                
+                .grid_item {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

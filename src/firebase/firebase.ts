@@ -1,6 +1,6 @@
 
 import { initializeApp } from "firebase/app";
-import { getFirestore, collection, getDocs, Firestore, DocumentData } from 'firebase/firestore/lite';
+import { getFirestore,  Firestore } from 'firebase/firestore/lite';
 
 const firebaseConfig = {
   apiKey: "AIzaSyAlD6zwxBHGaiDpR8OP2sHWgqm530RduWk",
@@ -13,25 +13,4 @@ const firebaseConfig = {
 };
 
 const app = initializeApp(firebaseConfig);
-const db: Firestore = getFirestore(app);
-
-export const profileCollection: DocumentData[] = [];
-
-export async function fetchCollection() {
-  const col = collection(db, 'profile');
-  const snapshot = await getDocs(col);
-  const list = snapshot.docs.map(doc => doc.data());
-  return list;
-}
-
-export async function getSheetCollection() {
-  const col = collection(db, 'sheet');
-  const snapshot = await getDocs(col);
-  const list = snapshot.docs.map(doc => doc.data());
-  return list;
-}
-
-    
-fetchCollection()
-  .then(response => response)
-  .then(data => data.map(e => profileCollection.push(e)));
+export const db: Firestore = getFirestore(app);

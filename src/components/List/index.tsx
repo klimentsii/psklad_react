@@ -5,6 +5,8 @@ interface IList {
     listItem: {
         listImg: string;
         listText: string;
+        imgAlt: string;
+        imgTitle: string;
     } []
 }
 
@@ -24,7 +26,7 @@ export const List = ({ title, listItem }: IList) => {
                         {
                             listItem.map((e, i) => 
                             <div className="list_item" key={i}>
-                                <img src={'../../assets/images/list/' + e.listImg} alt="" />
+                                <img src={'../../assets/images/list/' + e.listImg} alt={e.imgAlt} title={e.imgTitle} />
                                 <div className='list_item_number'>0{i + 1}</div>
                                 <p className="list_text">{e.listText}</p>
                             </div>
