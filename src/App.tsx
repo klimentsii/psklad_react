@@ -62,6 +62,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/ceny/" element={<Catalog />} />
+        <Route path="/catalog/" element={<Catalog />} />
         <Route path="/uslugi/" element={<Services />} />
         <Route path="/profil'/" element={<ProfileProduct />} />
         <Route path="/armatura/" element={<FittingProduct />} />
