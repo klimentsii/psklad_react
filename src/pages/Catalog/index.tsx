@@ -25,6 +25,8 @@ export const Catalog =() => {
 
             <Main title='Надежный партнер в сфере металлоторговли - Склад Металла в Молодечно' bg='zadnij-fon-sklad-metalla-cekh-s-metalloprokatom.jpg' optionalClass=''></Main>
             
+            <Paragraph title="Цена указана за один метр погонный!" text=""></Paragraph>
+
             <Table 
                 title='Вы можете приобрести металлопрокат в нашем каталоге - широкий выбор металлических изделий!'
                 collections={
